@@ -1,0 +1,119 @@
+/* style.css */
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(90deg); /* Start from 90 degrees */
+  }
+  100% {
+    transform: rotate(0); /* End at 0 degrees */
+  }
+}
+.card-question, .card-reponse {
+  padding: 30px; /* Rembourrage généreux pour un look spacieux */
+  margin: 29px 0; /* Ajouter de l'espace entre les cartes */
+  border-radius: 2; /* Coins carrés pour un look carré */
+  box-shadow: 0 4px 12px 2px rgba(181, 234, 4, 0.4); /* Ombre plus prononcée pour la profondeur */
+  display: flex; /* Utiliser flexbox pour centrer le contenu */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  text-align: center; /* Assurer que le texte est centré */
+  font-size: 11px; /* Taille de police lisible */
+  animation: rotateIn 0.5s ease; /* Apply the animation */
+}
+
+.card-question {
+  background-color: #1c75be;
+  border: 6px solid #2e7ce3;
+  color: #5b5d37;
+  
+}
+
+.card-reponse {
+  background-color: #24703d;
+  border: 6px solid #39eb60;
+  color: #13064b;
+}
+
+/* style.css */
+
+/* style.css */
+
+/* Unified button styling */
+.stButton > button {
+  width: 200px; /* Set a fixed width for all buttons */
+  height: 50px; /* Set a fixed height for all buttons */
+  padding: 10px; /* Adjust padding for better button appearance */
+  margin: 10px; /* Add margin to separate buttons */
+  border-radius: 25px; /* Apply border-radius for rounded corners */
+  border: none; /* Remove border for cleaner look */
+  font-size: 16px; /* Adjust font size for better readability */
+  font-weight: bold; /* Apply bold font weight for better visibility */
+  background-color: #3170ef; /* Set background color for buttons */
+  color: #ffffff; /* Set text color for buttons */
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+  box-shadow: 0 4px 12px 2px rgba(65, 110, 226, 0.4); /* Ombre plus prononcée pour la profondeur */
+  animation: rotateIn 0.5s ease; /* Apply the animation */
+}
+
+
+.stButton > button:hover {
+  background-color: #021c54; /* Darker background color on hover */
+  color: #ffffff; /* Lighter text color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Positioning the buttons */
+.first-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-line {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Additional styling for the rest of the app */
+body {
+  background-color: #070606;
+  font-family: 'Comic Neue', 'Arial', sans-serif;
+}
+
+ h3, h4, h5, h6 {
+  color: #f0f0f4f9;
+  font-family: 'Arial', sans-serif; /* Change font family for h1 */
+  font-size: 24px; /* Change font size for h1 and h2 */
+  
+}
+h1, h2 {
+  color: hwb(0 98% 1%);
+  font-family: 'Arial', sans-serif; /* Change font family for h1 */
+  font-size: 24px; /* Change font size for h1 and h2 */
+}
+.question-prefix {
+  font-weight: bold;
+  color:  #080808; /* Change color as desired */
+}
+
+.answer-prefix {
+  font-weight: bold;
+  color:  #080808; /* Change color as desired */
+}
+
+
+
+/* Override Streamlit's default max-width for containers to allow cards to be wider */
+.css-1d391kg {
+  max-width: 90%;
+}
