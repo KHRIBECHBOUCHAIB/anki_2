@@ -100,8 +100,10 @@ def main():
     st.title('Apprentissage interactif pour enfant')
 
     if st.session_state.quitter:
-        st.markdown("### Merci d'avoir participé à cet apprentissage interactif ! 😊")
-        st.markdown("Vous pouvez toujours reprendre en cliquant sur le bouton **Reprendre** ci-dessus.")
+        # Load your logo image
+        logo = "images/kid.webp"
+        st.image(logo, width=300)
+        st.markdown(" Super ! Tu as terminé ! 😊 Si tu veux continuer à explorer, il te suffit de cliquer sur le bouton **Reprendre** juste au-dessus. Amuse-toi bien !")
         if st.button("Reprendre"):
             recommencer()
     else:
